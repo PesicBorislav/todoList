@@ -43,13 +43,13 @@ header:first-child {
     background:white;
     margin-top: 2rem;
     margin-bottom: 3rem;
-    color:orange;
+    color:rgb(255, 64, 0);
     font-weight: bold;
     font-size: 1.2rem;
 }
 
 .btn i{
-    color:orange;
+    color:rgb(255, 72, 0);
 }
 
 .todo {
@@ -59,8 +59,9 @@ header:first-child {
     min-width:200px;
     background:white;
     list-style: none;
-    color:orange;
+    color:rgb(255, 72, 0);
     font-weight: bold;
+    transition: .9s ease;
 }
 
 .todo li {
@@ -88,4 +89,33 @@ header:first-child {
 .completed {
     opacity: .3;
     text-decoration: line-through;
+}
+
+.remove{
+    opacity:0;
+    transform: translateY(100px);
+}
+
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding:10px;
+    margin:10px;
+    text-align: center;
+    border:none;
+    background:rgb(255, 255, 255);
+    color:rgb(255, 72, 0);
+    font-weight: bold;
+}
+
+select option{
+    font-weight: bold;
+}
+
+select:focus{
+    border:0;
+    outline:0;
 }
